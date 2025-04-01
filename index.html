@@ -6,20 +6,20 @@
 
   <!-- ✅ Open Graph 메타태그 (카카오톡 미리보기용) -->
   <meta property="og:title" content="송금 보내요 💸" />
-  <meta property="og:description" content="클릭해서 카카오페이로 바로 송금할 수 있어요." />
-  <meta property="og:image" content="https://jeongho9804.github.io/send-money-preview.png" />
+  <meta property="og:description" content="클릭해서 카카오페이로 간편하게 송금할 수 있어요." />
+  <meta property="og:image" content="https://jeongho9804.github.io/receive-money-preview.png" />
   <meta property="og:url" content="https://jeongho9804.github.io" />
-  <meta property="og:site_name" content="카카오페이 송금" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="카카오페이 송금" />
 
   <title>송금 보내요</title>
 
   <style>
     body {
       font-family: 'Noto Sans KR', sans-serif;
-      background-color: #f0f2f5;
+      background-color: #f7f7f7;
       text-align: center;
-      padding: 50px;
+      padding: 60px 20px;
     }
     h1 {
       font-size: 2rem;
@@ -32,30 +32,38 @@
     .btn {
       display: inline-block;
       margin-top: 30px;
-      padding: 12px 24px;
+      padding: 14px 28px;
       background-color: #ffdd00;
       color: #000;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
       font-size: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
     .btn:hover {
       background-color: #ffe733;
     }
+    .preview-img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>송금 보내요 💸</h1>
-  <p>아래 버튼을 눌러 카카오페이로 안전하게 송금해주세요.</p>
+  <h1>💸 송금 보내요</h1>
+  <p>클릭 한 번으로 간편하게 송금할 수 있어요.</p>
 
-  <!-- ✅ 여기에 실제 송금 QR 링크 삽입 -->
-  <a class="btn" href="https://qr.kakaopay.com/송금코드" target="_blank">
-    송금하러 가기
-  </a>
+  <!-- ✅ 카카오페이 송금 링크 연결 -->
+  <a class="btn" href="https://qr.kakaopay.com/송금코드" target="_blank">송금하러 가기</a>
+
+  <!-- (선택) 카드와 같은 썸네일 이미지를 직접 페이지 안에도 넣기 -->
+  <img class="preview-img" src="receive-money-preview.png" alt="송금 카드 미리보기">
 
   <p style="margin-top: 50px; font-size: 0.85rem; color: #999;">
-    이 페이지는 카카오페이와 무관한 개인 프로젝트입니다.
+    본 페이지는 개인 테스트 용도로 제작되었으며, 카카오페이와 무관합니다.
   </p>
 </body>
 </html>
